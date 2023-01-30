@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Loader from 'react-loaders'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     }, [])
 
     return (
+    <>
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
@@ -36,6 +38,8 @@ const Home = () => {
                 <Link to ='/contact' className='flat-button'>REACH ME HERE</Link>
             </div>
         </div>
+        <Loader type='ball-grid-beat'/>
+    </>
     )
 }
 
