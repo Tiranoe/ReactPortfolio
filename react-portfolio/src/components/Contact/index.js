@@ -1,12 +1,12 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
-import Loader from 'react-loaders'
-import { useEffect, useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+import Loader from 'react-loaders';
+import { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser'; 
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const refForm = useRef
+    const refForm = useRef()
 
     useEffect(()=> {
         return setTimeout(() => {
@@ -19,8 +19,19 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'gmail',
-                ''
+                'default_service',
+                'template_9cc7fhg',
+                refForm.current,
+                'jrKFAwaQeYPhbhliL'
+            )
+            .then(
+                () => {
+                    alert('Message successfully sent!')
+                    window.location.reload(false)
+                },
+                () => {
+                    alert('Failed to send, please try again')
+                }
             )
     }
     
@@ -38,10 +49,10 @@ const Contact = () => {
                     <p>
                         I am looking towards any opportunities to improve my skill set 
                         in programming languages of Python and JavaScript. Please reach out via email
-                        @Jungwoo9543@gmail.com, and I would love to discuss anything regarding to my experiences!
+                        at Jungwoo9543@gmail.com, and I would love to discuss anything regarding to my experiences!
                     </p>
                     <div className="contact-form">
-                        <form>
+                        <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input type='text' name='name' placeholder='Name' required/>
@@ -50,13 +61,13 @@ const Contact = () => {
                                     <input type='email' name='email' placeholder='Email' required/>
                                 </li>
                                 <li> 
-                                    <input type='text' name='subject' placeholder='Subject' required/>
+                                    <input placeholder='Subject' type='text' name='subject' required/>
                                 </li>
                                 <li>
                                     <textarea name='message' placeholder='Message' required/>
                                 </li>
                                 <li>
-                                    <input name='submit' className='flat-button' value='SEND'/>
+                                    <input type="submit" className='flat-button' value='Send'/>
                                 </li>
                             </ul>
                         </form>
