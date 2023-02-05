@@ -26,14 +26,16 @@ const Project = () => {
                 </h1>
             </div>
 
-                <div className='projects'>
-                    <div className='project_list'>
-                        <figure class='image-is-rectangle'>
+                <div className='projects_list'>
+                    <div className='card'></div>
+                    <div className='card-image'>
                         <div className='project1'>
-                            <img src= "https://github.com/Tiranoe/adventureTime/blob/main/assets/adventuretimegif.gif?raw=true" alt = "adventureTimes"/>
+                            <figure class='image-is-square'>
+                            <img src= "https://github.com/Tiranoe/adventureTime/blob/main/assets/adventuretimegif.gif?raw=true" alt = "adventureTimes"/> </figure>
                         </div>
                         <div className='project2'>
-                            <img src= "https://github.com/Tiranoe/Instagram-Cloning/blob/main/assets/instagram%20clone%20gif.gif?raw=true" alt = "instagramClone"/>
+                            <figure class='image-is-square'>
+                            <img src= "https://github.com/Tiranoe/Instagram-Cloning/blob/main/assets/instagram%20clone%20gif.gif?raw=true" alt = "instagramClone"/> </figure>
                         </div>
                         <div className='project3'>
                             <img src= "https://github.com/Tiranoe/TAMA/blob/main/assets/ezgif-5-9cb8e12fd0.gif?raw=true" alt = "tamagatchi"/>
@@ -41,7 +43,6 @@ const Project = () => {
                         <div className='project4'>
                             <img src= "https://github.com/Tiranoe/Travel-Cities/blob/main/assets/travelizer%20gif.gif?raw=true" alt = "travelizer"/>
                         </div>
-                        </figure>
                     </div>
                 </div>
             </div>
