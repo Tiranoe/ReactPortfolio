@@ -1,0 +1,32 @@
+{
+    "portfolio": [
+        {
+            "cover": "https://github.com/Tiranoe/adventureTime/blob/main/assets/adventuretimegif.gif?raw=true",
+            "title": "Adventure Time",
+            "tools": "Python, Django",
+            "description": "Community Applications for travelers to share their unique experiences",
+            "url": "https://adventuretimes.herokuapp.com/"
+        },
+        {
+            "cover": "https://github.com/Tiranoe/Instagram-Cloning/blob/main/assets/instagram%20clone%20gif.gif?raw=true",
+            "title": "Instagram Clone",
+            "tools": "JavaScript, EJS,  Node, Express, MongoDB",
+            "description": "Instagram is a full-stack web application in which users are able to post images for the world to see, along with browsing others images, liking them, and commenting on them. Our team of three developers implemented a version of Instagram that allows users to do the same things that they can on the real version in a one-week sprint.",
+            "url": "https://instagram-clone-713.herokuapp.com/"
+        },
+        {
+            "cover": "https://github.com/Tiranoe/TAMA/blob/main/assets/ezgif-5-9cb8e12fd0.gif?raw=true",
+            "title": "Tamagatchi",
+            "tools": "JavaScript, HTML, CSS",
+            "description": "A clone of popular Japanese game called: Tamagotchi",
+            "url": "https://github.com/Tiranoe/TAMA"
+        },
+        {
+            "cover": "https://github.com/Tiranoe/Travel-Cities/blob/main/assets/travelizer%20gif.gif?raw=true",
+            "title": "Trazelizer",
+            "tools": "JavaScript, React, API",
+            "description": "This app will show list of countries for the user to determine which country to choose for their vacation time. User will be able to see all the list of countries in the database. When user clicks each country name, it will display countrys name, capital city, currency, flag, phone code, and other information regarding to that country.",
+            "url": "https://golden-donut-7a98ce.netlify.app/"
+        }
+    ]
+}
