@@ -3,14 +3,14 @@
         {
             "cover": "https://github.com/Tiranoe/adventureTime/blob/main/assets/adventuretimegif.gif?raw=true",
             "title": "Adventure Time",
-            "tools": "Python, Django",
-            "description": "Community Applications for travelers to share their unique experiences",
+            "tools": "Python, Django, UserAuth",
+            "description": "Community Applications for travelers to share their unique experiences. A user must sign up first to use the community, and after adding a fancy title with a picture, users can add in any activites or events during their stay in that location. They can also rate the experience on the scale of 10.",
             "url": "https://adventuretimes.herokuapp.com/"
         },
         {
             "cover": "https://github.com/Tiranoe/Instagram-Cloning/blob/main/assets/instagram%20clone%20gif.gif?raw=true",
             "title": "Instagram Clone",
-            "tools": "JavaScript, EJS,  Node, Express, MongoDB",
+            "tools": "JavaScript, EJS,  Node, Express, MongoDB, UserAuth",
             "description": "Instagram is a full-stack web application in which users are able to post images for the world to see, along with browsing others images, liking them, and commenting on them. Our team of three developers implemented a version of Instagram that allows users to do the same things that they can on the real version in a one-week sprint.",
             "url": "https://instagram-clone-713.herokuapp.com/"
         },
@@ -18,7 +18,7 @@
             "cover": "https://github.com/Tiranoe/TAMA/blob/main/assets/ezgif-5-9cb8e12fd0.gif?raw=true",
             "title": "Tamagatchi",
             "tools": "JavaScript, HTML, CSS",
-            "description": "A clone of popular Japanese game called: Tamagotchi",
+            "description": "A clone of popular Japanese game called: Tamagotchi. As a player, you must continue to feed, play, clean and even exercise your pet in order to keep your pet alive. You also have the option to abandon your pet.. but what kind of human would do that?",
             "url": "https://github.com/Tiranoe/TAMA"
         },
         {

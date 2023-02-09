@@ -27,6 +27,7 @@ const Project = () => {
                                 <img 
                                 src={proj.cover} 
                                 className="project-gif"
+                                href="{proj.url}"
                                 alt="project" />
                                 <div className="content">
                                     <p className="title">Project Name: {proj.title}</p>
@@ -51,7 +52,7 @@ const Project = () => {
             <h1 className='page-title'>
                 <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={"Projects".split("")}
+                    strArray={"My Projects".split("")}
                     idx={15}
                 />
             </h1>
