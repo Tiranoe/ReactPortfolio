@@ -6,7 +6,6 @@ import projectData from '../../data/projects.json'
 
 const Project = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    console.log(projectData)
 
     useEffect(()=> {
         const timer = setTimeout(() => {
@@ -24,11 +23,20 @@ const Project = () => {
                 {
                     projects.map((proj, idx) => {
                         return (
-                            <div className="image-box" key={idx}>
+                            <div className="image-rectangle" key={idx}>
                                 <img 
                                 src={proj.cover} 
                                 className="project-gif"
-                                alt="project cover" />
+                                alt="project" />
+                                <div className="content">
+                                    <p className="title">Project Name: {proj.title}</p>
+                                    <p className="tools">Tools: {proj.tools}</p>
+                                    <p className="description">{proj.description}</p>
+                                    <button
+                                        className='btn'
+                                        onClick={() => window.open(proj.url)}
+                                    >Live Link</button>
+                                </div>
                             </div>
                         )
                     })
@@ -40,17 +48,16 @@ const Project = () => {
     return (
     <>
         <div className='container project-page'>
-            <div className='page-title'>
-                <h1>
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"Projects".split("")}
-                        idx={15}
-                    />
-                </h1>
-                <div>{renderProjects(projectData.projects)}</div>
-            </div>
-            </div>
+            <h1 className='page-title'>
+                <AnimatedLetters
+                    letterClass={letterClass}
+                    strArray={"Projects".split("")}
+                    idx={15}
+                />
+            </h1>
+                <div>{renderProjects(projectData.projects)}
+                </div>
+        </div>
         <Loader type='ball-grid-beat' />
     </>
     )
