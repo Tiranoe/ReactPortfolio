@@ -30,7 +30,7 @@ const About = () => {
                     My interests generally lie in the areas of Frontend Development along with Data Engineer and QA Analyst.
                 </p>
                 <p> I enjoy the process of problem-solving and love learning about the underlying algorithmic solutions!
-                    My favorite language are in Python and JavaScript.
+                    My favorite languages are Python and JavaScript.
                 </p>
                 <p> 
                     As a person, I love to go travel and experience the many unique beauty of this world, capture those moments to create a film for memories,
