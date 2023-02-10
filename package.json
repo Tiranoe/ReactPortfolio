@@ -1,8 +1,8 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "private": true,
   "homepage": "http://tiranoe.github.io/ReactPortfolio",
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
